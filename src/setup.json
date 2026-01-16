@@ -1,0 +1,34 @@
+{
+  "ground_dir": "./data/ground",
+  "img_dir": "./data/img",
+  "img_metafile": "Ground_truth.csv",
+  "use_workers": 0,
+  "epoch_count": 40,
+  "box_thresh": 0.35,
+  "setups": [
+    {
+      "name": "ST",
+      "desc": "Training and testing with standard dataset",
+      "model": "stand.pty",
+      "train": "Train_S.txt",
+      "valid": "Valid_S.txt",
+      "test": "Test_S.txt"
+    },
+    {
+      "name": "ST_TR",
+      "desc": "Training with standard puzzles, validating and testing with non-standard dataset",
+      "model": "stand_train.pty",
+      "train": "Train_S.txt",
+      "valid": "Valid_NS.txt",
+      "test": "Test_NS.txt"
+    },
+    {
+      "name": "NO_ST",
+      "desc": "Training and testing with non-standard dataset",
+      "model": "non_stand.pty",
+      "train": "Train_NS.txt",
+      "valid": "Valid_NS.txt",
+      "test": "Test_NS.txt"
+    }
+  ]
+}
