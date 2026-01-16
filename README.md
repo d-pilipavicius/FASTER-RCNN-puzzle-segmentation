@@ -56,7 +56,7 @@ conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install albumentations torchmetrics[detection]
 ```
 
-## Running the models
+## Running models
 After cloning the repo, cd into the directory
 ```bash
 cd FASTER-RCNN-puzzle-segmentation
