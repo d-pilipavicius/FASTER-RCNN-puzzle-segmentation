@@ -168,9 +168,9 @@ def print_metrics(
   pred_labels: list[Tensor],
   pred_scores: list[Tensor]
 ):
-  puzzle_metrics = calc_images_metrics_for_class(0, grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
-  wordlist_metrics = calc_images_metrics_for_class(1, grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
-  other_metrics = calc_images_metrics_for_class(2, grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
+  puzzle_metrics = calc_images_metrics_for_class(1, grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
+  wordlist_metrics = calc_images_metrics_for_class(2, grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
+  other_metrics = calc_images_metrics_for_class(3, grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
   
   iou = calc_images_avg_iou(grnd_bboxes, grnd_labels, pred_bboxes, pred_labels)
   map_and_ap = calc_map_and_class_ap(grnd_bboxes, grnd_labels, pred_bboxes, pred_labels, pred_scores)
